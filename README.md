@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Swapy-y/Swapy-y/main/header.svg" width="100%" alt="Sleek Hero">
+<img src="https://raw.githubusercontent.com/Swapy-y/Swapy-y/main/header.svg?v=2" width="100%" alt="Sleek Hero">
 
 <br/>
 
