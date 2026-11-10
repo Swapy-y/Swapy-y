@@ -11,23 +11,6 @@
       <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
     </radialGradient>
   </defs>
-  <style>
-    @keyframes ceTwinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
-    @keyframes ceDraw { 0%, 12% { stroke-dashoffset: var(--l, 100); } 34%, 90% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; } }
-    .ce-star-div { transform-box: fill-box; transform-origin: center; animation: ceStar 12s linear infinite; }
-    @keyframes ceStar { to { transform: rotate(360deg); } }
-    
-    .ce-eyebrow { animation: ceReveal 12s ease-out infinite; }
-    .ce-name { animation: ceReveal 12s ease-out infinite; animation-delay: 0.96s; }
-    .ce-div { animation: ceWipe 12s ease-out infinite; transform-box: fill-box; transform-origin: left center; animation-delay: 1.68s; }
-    .ce-deck { animation: ceReveal 12s ease-out infinite; }
-    .ce-deck-0 { animation-delay: 2.40s; }
-    .ce-deck-1 { animation-delay: 2.88s; }
-    .ce-meta { animation: ceReveal 12s ease-out infinite; animation-delay: 3.60s; }
-    
-    @keyframes ceReveal { 0%, 5% { opacity: 0; transform: translateY(5px); } 18%, 90% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; } }
-    @keyframes ceWipe { 0%, 8% { transform: scaleX(0); } 24%, 90% { transform: scaleX(1); } 100% { transform: scaleX(1); } }
-  </style>
 
   <rect width="800" height="320" fill="url(#ceSky)"/>
 
