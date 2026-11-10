@@ -40,8 +40,8 @@
   </defs>
   <rect width="100%" height="100%" fill="url(#card-grad)" rx="14" ry="14"/>
   <rect x="32" y="32" width="3" height="256" fill="#ffffff" rx="1.5" class="accentbar"/>
-  <text class="heading" x="56" y="108" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="32" font-weight="700">Hi, I&apos;m Swapy.</text>
-  <text class="bio" x="56" y="158" fill="#a5a5b3" font-family='"Inter", system-ui, sans-serif' font-size="15" font-weight="400"><tspan x="56" dy="0">I like designing creative things and building useful apps. Passionate about</tspan><tspan x="56" dy="22">turning ideas into reality. Always learning and improving my skills.</tspan></text>
+  <text class="heading" x="56" y="108" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="32" font-weight="700">&apos;</text>
+  <text class="bio" x="56" y="158" fill="#a5a5b3" font-family='"Inter", system-ui, sans-serif' font-size="15" font-weight="400"><tspan x="56" dy="0"></tspan><tspan x="56" dy="22">turning ideas into reality. Always learning and improving my skills.</tspan></text>
   <g transform="translate(56 218.935)">
         <g class="pill p0">
           <rect width="134" height="20.130000000000003" rx="10.065000000000001" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.4"/>
