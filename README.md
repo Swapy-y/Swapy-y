@@ -21,13 +21,13 @@
   </g>
 
   <!-- Name -->
-  <text class="name" x="400" y="138" text-anchor="middle" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="56" font-weight="700" letter-spacing="-1.5">Swapy</text>
+  <text class="name" x="400" y="138" text-anchor="middle" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="56" font-weight="700" letter-spacing="-1.5"></text>
 
   <!-- Accent underline -->
   <rect class="underline" x="330" y="164" width="140" height="2" fill="#ffffff" rx="1"/>
 
   <!-- Meta line -->
-  <text class="meta" x="400" y="200" text-anchor="middle" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2">SOFTWARE ENGINEER</text>
+  <text class="meta" x="400" y="200" text-anchor="middle" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2"></text>
 </svg>
 
 ![Uploadin<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
