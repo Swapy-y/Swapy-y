@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Swapy-y/Swapy-y/main/header-new.svg" width="100%" alt="Sleek Hero">
+<img src="https://raw.githubusercontent.com/Swapy-y/Swapy-y/main/header-static.svg" width="100%" alt="Sleek Hero">
 
 <br/>
 
@@ -6,4 +6,4 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Swapy-y/Swapy-y/main/footer.svg" width="100%" alt="Sleek Wave">
+<img src="https://raw.githubusercontent.com/Swapy-y/Swapy-y/main/footer-static.svg" width="100%" alt="Sleek Wave">
