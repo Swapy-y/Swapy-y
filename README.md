@@ -1,107 +1,160 @@
-<img width="800" height="320" alt="header(2)" src="https://github.com/user-attachments/assets/d3213bc7-27e1-41c0-846b-340841d97f43" />
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+<img width="800" height="320" alt="about" src="https://github.com/user-attachments/assets/10e0b4ff-1a0e-4b2b-826a-bba64f7a7155" /><img width="800" height="300" alt="header" src="https://github.com/user-attachments/assets/f71b3f15-a7a8-446e-94c7-5946a06ebde1" />
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+  <style>
+    .name { animation: nameIn 11s ease-out infinite; }
+    .underline { animation: underlineDraw 11s ease-out infinite; transform-origin: left center; }
+    .meta { animation: fadeUp 11s ease-out infinite; animation-delay: 0.3s; }
+    .corner { animation: cornerSlide 11s ease-out infinite; }
+
+    @keyframes nameIn {
+      0%, 4% { opacity: 0; transform: translateY(8px); }
+      14%, 90% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(0); }
+    }
+    @keyframes underlineDraw {
+      0%, 14% { transform: scaleX(0); }
+      24%, 88% { transform: scaleX(1); }
+      100% { transform: scaleX(1); }
+    }
+    @keyframes fadeUp {
+      0%, 22% { opacity: 0; transform: translateY(6px); }
+      32%, 90% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(0); }
+    }
+    @keyframes cornerSlide {
+      0%, 8% { opacity: 0; transform: translateX(-8px); }
+      18%, 90% { opacity: 1; transform: translateX(0); }
+      100% { opacity: 0; transform: translateX(0); }
+    }
+  </style>
   <defs>
-    <linearGradient id="ceSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#25292e"/>
-      <stop offset="0.55" stop-color="#0c1016"/>
-      <stop offset="1" stop-color="#07090c"/>
+    <linearGradient id="hdr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.85"/>
     </linearGradient>
-    <radialGradient id="ceVig" cx="0.5" cy="0.4" r="0.75">
-      <stop offset="0.6" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
-    </radialGradient>
   </defs>
+  <rect width="100%" height="100%" fill="url(#hdr-bg)" rx="14" ry="14"/>
 
-  <rect width="800" height="320" fill="url(#ceSky)"/>
-
-  <!-- starfield -->
-  <circle cx="287" cy="34" r="1.28" fill="#eef2fb" opacity="0.81" style="animation: ceTwinkle 2.25s ease-in-out 0.90s infinite"/>
-  <circle cx="373" cy="139" r="1.11" fill="#eef2fb" opacity="0.60" style="animation: ceTwinkle 2.77s ease-in-out 2.70s infinite"/>
-  <circle cx="82" cy="79" r="0.74" fill="#ffffff" opacity="0.77" style="animation: ceTwinkle 2.48s ease-in-out 1.99s infinite"/>
-  <circle cx="607" cy="260" r="1.57" fill="#eef2fb" opacity="0.79" style="animation: ceTwinkle 3.32s ease-in-out 0.76s infinite"/>
-  <circle cx="785" cy="209" r="1.50" fill="#eef2fb" opacity="0.72" style="animation: ceTwinkle 3.23s ease-in-out 0.45s infinite"/>
-  <circle cx="39" cy="113" r="1.47" fill="#eef2fb" opacity="0.84" style="animation: ceTwinkle 4.05s ease-in-out 0.22s infinite"/>
-  <circle cx="213" cy="202" r="0.46" fill="#eef2fb" opacity="0.82" style="animation: ceTwinkle 2.90s ease-in-out 0.46s infinite"/>
-  <circle cx="540" cy="199" r="0.63" fill="#eef2fb" opacity="0.76" style="animation: ceTwinkle 3.28s ease-in-out 0.50s infinite"/>
-  <circle cx="796" cy="78" r="0.58" fill="#eef2fb" opacity="0.84" style="animation: ceTwinkle 4.10s ease-in-out 2.92s infinite"/>
-  <circle cx="364" cy="41" r="1.16" fill="#eef2fb" opacity="0.81" style="animation: ceTwinkle 2.40s ease-in-out 0.63s infinite"/>
-  <circle cx="740" cy="157" r="1.48" fill="#eef2fb" opacity="0.39" style="animation: ceTwinkle 2.42s ease-in-out 0.65s infinite"/>
-  <circle cx="88" cy="108" r="0.92" fill="#eef2fb" opacity="0.59" style="animation: ceTwinkle 2.88s ease-in-out 1.84s infinite"/>
-  <circle cx="78" cy="207" r="1.41" fill="#eef2fb" opacity="0.79" style="animation: ceTwinkle 3.20s ease-in-out 0.75s infinite"/>
-  <circle cx="538" cy="191" r="1.58" fill="#eef2fb" opacity="0.70" style="animation: ceTwinkle 3.98s ease-in-out 0.67s infinite"/>
-  <circle cx="190" cy="264" r="1.42" fill="#eef2fb" opacity="0.52" style="animation: ceTwinkle 2.71s ease-in-out 2.19s infinite"/>
-  <circle cx="664" cy="159" r="1.02" fill="#eef2fb" opacity="0.40" style="animation: ceTwinkle 3.45s ease-in-out 0.19s infinite"/>
-  <circle cx="13" cy="11" r="1.02" fill="#eef2fb" opacity="0.81" style="animation: ceTwinkle 3.30s ease-in-out 2.73s infinite"/>
-  <circle cx="453" cy="223" r="0.76" fill="#eef2fb" opacity="0.65" style="animation: ceTwinkle 2.31s ease-in-out 1.90s infinite"/>
-  <circle cx="87" cy="134" r="0.98" fill="#eef2fb" opacity="0.71" style="animation: ceTwinkle 2.17s ease-in-out 1.17s infinite"/>
-  <circle cx="3" cy="197" r="1.62" fill="#eef2fb" opacity="0.41" style="animation: ceTwinkle 3.96s ease-in-out 0.67s infinite"/>
-  <circle cx="651" cy="45" r="1.68" fill="#eef2fb" opacity="0.50" style="animation: ceTwinkle 3.01s ease-in-out 2.23s infinite"/>
-  <circle cx="747" cy="192" r="0.68" fill="#eef2fb" opacity="0.36" style="animation: ceTwinkle 2.60s ease-in-out 1.64s infinite"/>
-  <circle cx="342" cy="194" r="1.54" fill="#eef2fb" opacity="0.76" style="animation: ceTwinkle 2.81s ease-in-out 1.05s infinite"/>
-  <circle cx="477" cy="168" r="1.31" fill="#eef2fb" opacity="0.77" style="animation: ceTwinkle 4.16s ease-in-out 0.72s infinite"/>
-  <circle cx="698" cy="120" r="1.13" fill="#eef2fb" opacity="0.64" style="animation: ceTwinkle 3.15s ease-in-out 0.08s infinite"/>
-  <circle cx="680" cy="255" r="0.53" fill="#eef2fb" opacity="0.46" style="animation: ceTwinkle 4.16s ease-in-out 2.92s infinite"/>
-  <circle cx="492" cy="56" r="1.01" fill="#eef2fb" opacity="0.38" style="animation: ceTwinkle 3.83s ease-in-out 1.82s infinite"/>
-  <circle cx="123" cy="318" r="1.28" fill="#eef2fb" opacity="0.38" style="animation: ceTwinkle 3.19s ease-in-out 0.83s infinite"/>
-  <circle cx="783" cy="90" r="1.15" fill="#eef2fb" opacity="0.61" style="animation: ceTwinkle 2.21s ease-in-out 1.39s infinite"/>
-  <circle cx="123" cy="185" r="0.65" fill="#eef2fb" opacity="0.76" style="animation: ceTwinkle 2.37s ease-in-out 1.74s infinite"/>
-  <circle cx="342" cy="70" r="0.76" fill="#ffffff" opacity="0.40" style="animation: ceTwinkle 3.19s ease-in-out 1.41s infinite"/>
-  <circle cx="24" cy="108" r="1.19" fill="#eef2fb" opacity="0.66" style="animation: ceTwinkle 2.81s ease-in-out 1.65s infinite"/>
-  <circle cx="364" cy="212" r="1.16" fill="#ffffff" opacity="0.68" style="animation: ceTwinkle 3.46s ease-in-out 2.23s infinite"/>
-  <circle cx="275" cy="250" r="0.45" fill="#ffffff" opacity="0.43" style="animation: ceTwinkle 3.43s ease-in-out 1.68s infinite"/>
-  <circle cx="367" cy="275" r="1.56" fill="#eef2fb" opacity="0.69" style="animation: ceTwinkle 3.72s ease-in-out 2.83s infinite"/>
-  <circle cx="686" cy="253" r="0.43" fill="#eef2fb" opacity="0.71" style="animation: ceTwinkle 4.02s ease-in-out 0.75s infinite"/>
-  <circle cx="334" cy="117" r="1.22" fill="#eef2fb" opacity="0.82" style="animation: ceTwinkle 2.68s ease-in-out 0.93s infinite"/>
-  <circle cx="167" cy="88" r="0.87" fill="#eef2fb" opacity="0.56" style="animation: ceTwinkle 3.73s ease-in-out 2.66s infinite"/>
-  <circle cx="435" cy="231" r="1.69" fill="#ffffff" opacity="0.71" style="animation: ceTwinkle 2.68s ease-in-out 0.35s infinite"/>
-  <circle cx="412" cy="78" r="0.53" fill="#eef2fb" opacity="0.38" style="animation: ceTwinkle 2.78s ease-in-out 2.21s infinite"/>
-  <circle cx="617" cy="291" r="1.32" fill="#eef2fb" opacity="0.76" style="animation: ceTwinkle 2.42s ease-in-out 2.15s infinite"/>
-  <circle cx="40" cy="90" r="0.64" fill="#ffffff" opacity="0.73" style="animation: ceTwinkle 4.34s ease-in-out 1.19s infinite"/>
-  <circle cx="279" cy="42" r="1.31" fill="#eef2fb" opacity="0.78" style="animation: ceTwinkle 2.61s ease-in-out 2.99s infinite"/>
-  <circle cx="413" cy="266" r="1.01" fill="#eef2fb" opacity="0.45" style="animation: ceTwinkle 4.01s ease-in-out 0.67s infinite"/>
-  <g style="animation: ceTwinkle 2.4s ease-in-out 0.0s infinite">
-    <circle cx="120" cy="70" r="2.6" fill="#eef2fb"/>
-    <path d="M 120 63 L 120 77 M 113 70 L 127 70" stroke="#eef2fb" stroke-width="0.8" opacity="0.6"/>
+  <!-- Corner decorations: outer <g> = position, inner <g> = animation -->
+  <g class="corner" opacity="0.6">
+    <rect x="40" y="42" width="22" height="2" fill="#ffffff" />
+    <rect x="40" y="42" width="2" height="22" fill="#ffffff" />
   </g>
-  <g style="animation: ceTwinkle 2.8s ease-in-out 0.5s infinite">
-    <circle cx="690" cy="90" r="3.2" fill="#eef2fb"/>
-    <path d="M 690 83 L 690 97 M 683 90 L 697 90" stroke="#eef2fb" stroke-width="0.8" opacity="0.6"/>
-  </g>
-  <g style="animation: ceTwinkle 3.2s ease-in-out 1.0s infinite">
-    <circle cx="560" cy="240" r="2.6" fill="#eef2fb"/>
-    <path d="M 560 233 L 560 247 M 553 240 L 567 240" stroke="#eef2fb" stroke-width="0.8" opacity="0.6"/>
-  </g>
-  <g style="animation: ceTwinkle 3.6s ease-in-out 1.5s infinite">
-    <circle cx="80" cy="230" r="3.2" fill="#eef2fb"/>
-    <path d="M 80 223 L 80 237 M 73 230 L 87 230" stroke="#eef2fb" stroke-width="0.8" opacity="0.6"/>
+  <g transform="translate(800 0) scale(-1 1)">
+    <g class="corner" opacity="0.6">
+      <rect x="40" y="42" width="22" height="2" fill="#ffffff" />
+      <rect x="40" y="42" width="2" height="22" fill="#ffffff" />
+    </g>
   </g>
 
-  <!-- constellation -->
-  <line x1="600" y1="90" x2="660" y2="140" stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-dasharray="78" stroke-dashoffset="78" style="--l:78; animation: ceDraw 12s ease-out 2.16s infinite"/>
-  <line x1="660" y1="140" x2="620" y2="200" stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-dasharray="72" stroke-dashoffset="72" style="--l:72; animation: ceDraw 12s ease-out 3.12s infinite"/>
-  <line x1="620" y1="200" x2="690" y2="230" stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-dasharray="76" stroke-dashoffset="76" style="--l:76; animation: ceDraw 12s ease-out 4.08s infinite"/>
-  <line x1="690" y1="230" x2="720" y2="170" stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-dasharray="67" stroke-dashoffset="67" style="--l:67; animation: ceDraw 12s ease-out 5.04s infinite"/>
-  <circle cx="600" cy="90" r="2.6" fill="#ffffff" style="animation: ceTwinkle 2.0s ease-in-out 0.00s infinite"/>
-  <circle cx="660" cy="140" r="2.6" fill="#ffffff" style="animation: ceTwinkle 2.3s ease-in-out 0.25s infinite"/>
-  <circle cx="620" cy="200" r="2.6" fill="#ffffff" style="animation: ceTwinkle 2.6s ease-in-out 0.50s infinite"/>
-  <circle cx="690" cy="230" r="2.6" fill="#ffffff" style="animation: ceTwinkle 2.9s ease-in-out 0.75s infinite"/>
-  <circle cx="720" cy="170" r="2.6" fill="#ffffff" style="animation: ceTwinkle 3.2s ease-in-out 1.00s infinite"/>
+  <!-- Name -->
+  <text class="name" x="400" y="138" text-anchor="middle" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="56" font-weight="700" letter-spacing="-1.5">Swapy</text>
 
-  <rect width="800" height="320" fill="url(#ceVig)"/>
+  <!-- Accent underline -->
+  <rect class="underline" x="330" y="164" width="140" height="2" fill="#ffffff" rx="1"/>
 
-  <!-- text -->
-  <text class="ce-eyebrow" x="48" y="128" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="12" letter-spacing="4">.</text>
-  <text class="ce-name" x="48" y="168" fill="#eef2fb" font-family="Georgia, 'Times New Roman', serif" font-size="44" letter-spacing="1">Swapy</text>
-
-  <!-- gold star divider -->
-  <g class="ce-div">
-    <line x1="48" y1="186" x2="198" y2="186" stroke="#ffffff" stroke-width="1"/>
-    <path class="ce-star-div" d="M 216 180 L 218.5 185 L 224 186 L 218.5 187 L 216 192 L 213.5 187 L 208 186 L 213.5 185 Z" fill="#ffffff"/>
-  </g>
-
-  <!-- deck -->
-  
-
-  <!-- meta -->
-  
+  <!-- Meta line -->
+  <text class="meta" x="400" y="200" text-anchor="middle" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2">SOFTWARE ENGINEER</text>
 </svg>
+<img width="800" height="320" alt="about" src="https://github.com/user-attachments/assets/33ea1591-7f38-479e-bea0-4da49067365b" />
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <style>
+    .heading { animation: slidein 11s ease-out infinite; }
+    .bio { animation: fade 11s ease-in-out infinite; }
+    .pill { animation: pillpop 11s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    .p0 { animation-delay: 0.4s }
+    .accentbar { animation: bar 11s ease-out infinite; transform-origin: top left; }
+
+    @keyframes slidein {
+      0% { opacity: 0; transform: translateX(-12px) }
+      8% { opacity: 1; transform: translateX(0) }
+      90% { opacity: 1; transform: translateX(0) }
+      100% { opacity: 0; transform: translateX(0) }
+    }
+    @keyframes fade {
+      0%, 8% { opacity: 0 }
+      18% { opacity: 1 }
+      90% { opacity: 1 }
+      100% { opacity: 0 }
+    }
+    @keyframes pillpop {
+      0%, 14% { opacity: 0; transform: scale(0.85) }
+      22% { opacity: 1; transform: scale(1) }
+      90% { opacity: 1; transform: scale(1) }
+      100% { opacity: 0; transform: scale(1) }
+    }
+    @keyframes bar {
+      0% { transform: scaleY(0) }
+      10% { transform: scaleY(1) }
+      90% { transform: scaleY(1) }
+      100% { transform: scaleY(1) }
+    }
+  </style>
+  <defs>
+    <linearGradient id="card-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#card-grad)" rx="14" ry="14"/>
+  <rect x="32" y="32" width="3" height="256" fill="#ffffff" rx="1.5" class="accentbar"/>
+  <text class="heading" x="56" y="108" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="32" font-weight="700">Hi, I&apos;m Swapy.</text>
+  <text class="bio" x="56" y="158" fill="#a5a5b3" font-family='"Inter", system-ui, sans-serif' font-size="15" font-weight="400"><tspan x="56" dy="0">I like designing creative things and building useful apps. Passionate about</tspan><tspan x="56" dy="22">turning ideas into reality. Always learning and improving my skills.</tspan></text>
+  <g transform="translate(56 218.935)">
+        <g class="pill p0">
+          <rect width="134" height="20.130000000000003" rx="10.065000000000001" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.4"/>
+          <text x="67" y="10.065000000000001" fill="#f7f7fb" font-size="11" font-family="ui-monospace, monospace" text-anchor="middle" dominant-baseline="middle">Software Engineer</text>
+        </g>
+      </g>
+</svg>
+
+![Uploading a<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <style>
+    .heading { animation: slidein 11s ease-out infinite; }
+    .bio { animation: fade 11s ease-in-out infinite; }
+    .pill { animation: pillpop 11s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    .p0 { animation-delay: 0.4s }
+    .accentbar { animation: bar 11s ease-out infinite; transform-origin: top left; }
+
+    @keyframes slidein {
+      0% { opacity: 0; transform: translateX(-12px) }
+      8% { opacity: 1; transform: translateX(0) }
+      90% { opacity: 1; transform: translateX(0) }
+      100% { opacity: 0; transform: translateX(0) }
+    }
+    @keyframes fade {
+      0%, 8% { opacity: 0 }
+      18% { opacity: 1 }
+      90% { opacity: 1 }
+      100% { opacity: 0 }
+    }
+    @keyframes pillpop {
+      0%, 14% { opacity: 0; transform: scale(0.85) }
+      22% { opacity: 1; transform: scale(1) }
+      90% { opacity: 1; transform: scale(1) }
+      100% { opacity: 0; transform: scale(1) }
+    }
+    @keyframes bar {
+      0% { transform: scaleY(0) }
+      10% { transform: scaleY(1) }
+      90% { transform: scaleY(1) }
+      100% { transform: scaleY(1) }
+    }
+  </style>
+  <defs>
+    <linearGradient id="card-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#card-grad)" rx="14" ry="14"/>
+  <rect x="32" y="32" width="3" height="256" fill="#ffffff" rx="1.5" class="accentbar"/>
+  <text class="heading" x="56" y="108" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="32" font-weight="700">Hi, I&apos;m Swapy.</text>
+  <text class="bio" x="56" y="158" fill="#a5a5b3" font-family='"Inter", system-ui, sans-serif' font-size="15" font-weight="400"><tspan x="56" dy="0">I like designing creative things and building useful apps. Passionate about</tspan><tspan x="56" dy="22">turning ideas into reality. Always learning and improving my skills.</tspan></text>
+  <g transform="translate(56 218.935)">
+        <g class="pill p0">
+          <rect width="134" height="20.130000000000003" rx="10.065000000000001" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.4"/>
+          <text x="67" y="10.065000000000001" fill="#f7f7fb" font-size="11" font-family="ui-monospace, monospace" text-anchor="middle" dominant-baseline="middle">Software Engineer</text>
+        </g>
+      </g>
+</svg>bout.svg…]()
