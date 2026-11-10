@@ -1,32 +1,5 @@
 <img width="800" height="300" alt="header" src="https://github.com/user-attachments/assets/0fbb0014-8e99-48dd-9cf3-1ad6e20875f8" />
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
-  <style>
-    .name { animation: nameIn 11s ease-out infinite; }
-    .underline { animation: underlineDraw 11s ease-out infinite; transform-origin: left center; }
-    .meta { animation: fadeUp 11s ease-out infinite; animation-delay: 0.3s; }
-    .corner { animation: cornerSlide 11s ease-out infinite; }
-
-    @keyframes nameIn {
-      0%, 4% { opacity: 0; transform: translateY(8px); }
-      14%, 90% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(0); }
-    }
-    @keyframes underlineDraw {
-      0%, 14% { transform: scaleX(0); }
-      24%, 88% { transform: scaleX(1); }
-      100% { transform: scaleX(1); }
-    }
-    @keyframes fadeUp {
-      0%, 22% { opacity: 0; transform: translateY(6px); }
-      32%, 90% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(0); }
-    }
-    @keyframes cornerSlide {
-      0%, 8% { opacity: 0; transform: translateX(-8px); }
-      18%, 90% { opacity: 1; transform: translateX(0); }
-      100% { opacity: 0; transform: translateX(0); }
-    }
-  </style>
   <defs>
     <linearGradient id="hdr-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/>
