@@ -58,10 +58,10 @@
   <rect x="56" y="74" width="56" height="3" rx="1.5" fill="#ffffff"/>
 
   <!-- Heading -->
-  <text x="56" y="56" fill="#f7f7fb" font-size="30" font-weight="700" letter-spacing="-0.02em">Stack.</text>
+  <text x="56" y="56" fill="#f7f7fb" font-size="30" font-weight="700" letter-spacing="-0.02em">.</text>
 
   <!-- Sub-line -->
-  <text x="56" y="104" fill="#a5a5b3" font-size="13" font-weight="500" letter-spacing="0.02em">7 tools I reach for daily.</text>
+  <text x="56" y="104" fill="#a5a5b3" font-size="13" font-weight="500" letter-spacing="0.02em"></text>
 
   <!-- Pill rows -->
   <g class="chip0">
