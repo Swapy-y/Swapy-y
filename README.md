@@ -1,32 +1,5 @@
 <img width="800" height="320" alt="about" src="https://github.com/user-attachments/assets/857d77fe-f05c-4ad0-a9d6-03f0a5a00c27" /><img width="800" height="300" alt="header" src="https://github.com/user-attachments/assets/aee0f039-2514-4202-a534-3c77fb0912b1" />
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
-  <style>
-    .name { animation: nameIn 11s ease-out infinite; }
-    .underline { animation: underlineDraw 11s ease-out infinite; transform-origin: left center; }
-    .meta { animation: fadeUp 11s ease-out infinite; animation-delay: 0.3s; }
-    .corner { animation: cornerSlide 11s ease-out infinite; }
-
-    @keyframes nameIn {
-      0%, 4% { opacity: 0; transform: translateY(8px); }
-      14%, 90% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(0); }
-    }
-    @keyframes underlineDraw {
-      0%, 14% { transform: scaleX(0); }
-      24%, 88% { transform: scaleX(1); }
-      100% { transform: scaleX(1); }
-    }
-    @keyframes fadeUp {
-      0%, 22% { opacity: 0; transform: translateY(6px); }
-      32%, 90% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(0); }
-    }
-    @keyframes cornerSlide {
-      0%, 8% { opacity: 0; transform: translateX(-8px); }
-      18%, 90% { opacity: 1; transform: translateX(0); }
-      100% { opacity: 0; transform: translateX(0); }
-    }
-  </style>
   <defs>
     <linearGradient id="hdr-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -58,38 +31,7 @@
 </svg>
 
 ![Uploadin<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
-  <style>
-    .heading { animation: slidein 11s ease-out infinite; }
-    .bio { animation: fade 11s ease-in-out infinite; }
-    .pill { animation: pillpop 11s ease-out infinite; transform-box: fill-box; transform-origin: center; }
-    .p0 { animation-delay: 0.4s }
-    .accentbar { animation: bar 11s ease-out infinite; transform-origin: top left; }
 
-    @keyframes slidein {
-      0% { opacity: 0; transform: translateX(-12px) }
-      8% { opacity: 1; transform: translateX(0) }
-      90% { opacity: 1; transform: translateX(0) }
-      100% { opacity: 0; transform: translateX(0) }
-    }
-    @keyframes fade {
-      0%, 8% { opacity: 0 }
-      18% { opacity: 1 }
-      90% { opacity: 1 }
-      100% { opacity: 0 }
-    }
-    @keyframes pillpop {
-      0%, 14% { opacity: 0; transform: scale(0.85) }
-      22% { opacity: 1; transform: scale(1) }
-      90% { opacity: 1; transform: scale(1) }
-      100% { opacity: 0; transform: scale(1) }
-    }
-    @keyframes bar {
-      0% { transform: scaleY(0) }
-      10% { transform: scaleY(1) }
-      90% { transform: scaleY(1) }
-      100% { transform: scaleY(1) }
-    }
-  </style>
   <defs>
     <linearGradient id="card-grad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -109,23 +51,6 @@
 </svg>g about.svg…]()
 
 <img width="800" height="200" alt="skills" src="https://github.com/user-attachments/assets/8e896f31-7700-4ad5-9405-40dcb9217813" /><svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
-  <style>
-    svg { font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-    @keyframes chip0 { 0%,0% { opacity: 0; transform: translateY(6px) } 2%,92% { opacity: 1; transform: translateY(0) } 97%,100% { opacity: 0 } }
-    @keyframes chip1 { 0%,3% { opacity: 0; transform: translateY(6px) } 5%,92% { opacity: 1; transform: translateY(0) } 97%,100% { opacity: 0 } }
-    @keyframes chip2 { 0%,5% { opacity: 0; transform: translateY(6px) } 7%,92% { opacity: 1; transform: translateY(0) } 97%,100% { opacity: 0 } }
-    @keyframes chip3 { 0%,8% { opacity: 0; transform: translateY(6px) } 10%,92% { opacity: 1; transform: translateY(0) } 97%,100% { opacity: 0 } }
-    @keyframes chip4 { 0%,10% { opacity: 0; transform: translateY(6px) } 12%,92% { opacity: 1; transform: translateY(0) } 97%,100% { opacity: 0 } }
-    @keyframes chip5 { 0%,13% { opacity: 0; transform: translateY(6px) } 15%,92% { opacity: 1; transform: translateY(0) } 97%,100% { opacity: 0 } }
-    @keyframes chip6 { 0%,15% { opacity: 0; transform: translateY(6px) } 17%,92% { opacity: 1; transform: translateY(0) } 97%,100% { opacity: 0 } }
-    .chip0 { animation: chip0 11s ease-out infinite; transform-origin: center; transform-box: fill-box; }
-    .chip1 { animation: chip1 11s ease-out infinite; transform-origin: center; transform-box: fill-box; }
-    .chip2 { animation: chip2 11s ease-out infinite; transform-origin: center; transform-box: fill-box; }
-    .chip3 { animation: chip3 11s ease-out infinite; transform-origin: center; transform-box: fill-box; }
-    .chip4 { animation: chip4 11s ease-out infinite; transform-origin: center; transform-box: fill-box; }
-    .chip5 { animation: chip5 11s ease-out infinite; transform-origin: center; transform-box: fill-box; }
-    .chip6 { animation: chip6 11s ease-out infinite; transform-origin: center; transform-box: fill-box; }
-  </style>
   <rect width="100%" height="100%" fill="#0d1117" rx="14" ry="14"/>
 
   <!-- Accent bar -->
@@ -169,45 +94,6 @@
 </svg>
 
 <img width="800" height="320" alt="gh-stats" src="https://github.com/user-attachments/assets/bfccaddc-e454-4594-8698-e0a7c7d81e82" /><svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
-  <style>
-    .heading { animation: slidein 11s ease-out infinite; }
-    .underline { animation: bar 11s ease-out infinite; transform-origin: left center; }
-    .meta { animation: fade 11s ease-in-out infinite; }
-    .corner { animation: cornerSlide 11s ease-out infinite; }
-    .stat { animation: fadeUp 11s ease-out infinite; }
-    .s0 { animation-delay: 0.3s }
-    .s1 { animation-delay: 0.4s }
-    .s2 { animation-delay: 0.5s }
-    .s3 { animation-delay: 0.6000000000000001s }
-    .lang-bar { animation: bar 11s ease-out infinite; transform-origin: left center; }
-
-    @keyframes slidein {
-      0% { opacity: 0; transform: translateX(-12px) }
-      8% { opacity: 1; transform: translateX(0) }
-      90% { opacity: 1; transform: translateX(0) }
-      100% { opacity: 0; transform: translateX(0) }
-    }
-    @keyframes bar {
-      0%, 14% { transform: scaleX(0) }
-      24%, 88% { transform: scaleX(1) }
-      100% { transform: scaleX(1) }
-    }
-    @keyframes fade {
-      0%, 22% { opacity: 0 }
-      32%, 90% { opacity: 1 }
-      100% { opacity: 0 }
-    }
-    @keyframes fadeUp {
-      0%, 22% { opacity: 0; transform: translateY(8px) }
-      36%, 90% { opacity: 1; transform: translateY(0) }
-      100% { opacity: 0; transform: translateY(0) }
-    }
-    @keyframes cornerSlide {
-      0%, 8% { opacity: 0; transform: translateX(-8px) }
-      18%, 90% { opacity: 0.6; transform: translateX(0) }
-      100% { opacity: 0; transform: translateX(0) }
-    }
-  </style>
   <defs>
     <linearGradient id="sleek-stats-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -291,43 +177,6 @@
 </svg>
 
 <img width="800" height="160" alt="footer" src="https://github.com/user-attachments/assets/c0c94eb9-3aca-485e-aa24-ada871e13120" /><svg xmlns="http://www.w3.org/2000/svg" width="800" height="160" viewBox="0 0 800 160">
-  <style>
-    
-    .signoff { animation: signoffIn 11s ease-in-out infinite; }
-    .soc { animation: socfade 11s ease-in-out infinite; }
-    .sf0 { animation-delay: 0.60s }
-
-    @keyframes signoffIn {
-      0%, 8% { opacity: 0; transform: translateY(4px); }
-      18%, 90% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(0); }
-    }
-    @keyframes socfade {
-      0%, 22% { opacity: 0; }
-      32%, 90% { opacity: 1; }
-      100% { opacity: 0; }
-    }
-  
-    .heart { animation: heartbeat 11s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-    .wave-front { animation: drift-front 11s linear infinite; }
-    .wave-back { animation: drift-back 11s linear infinite; }
-
-    @keyframes heartbeat {
-      0%, 40% { transform: scale(1); }
-      45% { transform: scale(1.18); }
-      50% { transform: scale(1); }
-      55% { transform: scale(1.12); }
-      60%, 100% { transform: scale(1); }
-    }
-    @keyframes drift-front {
-      from { transform: translateX(0); }
-      to { transform: translateX(-160px); }
-    }
-    @keyframes drift-back {
-      from { transform: translateX(0); }
-      to { transform: translateX(256px); }
-    }
-  </style>
   <defs>
     <linearGradient id="wave-fade" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
