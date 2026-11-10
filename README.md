@@ -1,86 +1,124 @@
-<img width="800" height="300" alt="header" src="https://github.com/user-attachments/assets/edb9a986-4fb1-4e40-9875-d5c9a3149404" />
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
-  <style>
-    .g-blob1 { animation: g-drift1 11s ease-in-out infinite; }
-    .g-blob2 { animation: g-drift2 11s ease-in-out infinite; }
-    .g-blob3 { animation: g-drift3 11s ease-in-out infinite; }
-    @keyframes g-drift1 {
-      0%, 100% { transform: translate(0, 0); }
-      25% { transform: translate(40px, -25px); }
-      50% { transform: translate(0, -50px); }
-      75% { transform: translate(-40px, -25px); }
-    }
-    @keyframes g-drift2 {
-      0%, 100% { transform: translate(0, 0); }
-      25% { transform: translate(-30px, 25px); }
-      50% { transform: translate(0, 50px); }
-      75% { transform: translate(30px, 25px); }
-    }
-    @keyframes g-drift3 {
-      0%, 100% { transform: translate(0, 0); }
-      25% { transform: translate(25px, -40px); }
-      50% { transform: translate(-40px, 0); }
-      75% { transform: translate(25px, 40px); }
-    }
-    .g-p { animation: g-pulse 3s ease-in-out infinite; }
-    .p1 { animation-delay: -0.6s; }
-    .p2 { animation-delay: -1.2s; }
-    .p3 { animation-delay: -1.8s; }
-    .p4 { animation-delay: -2.4s; }
-    @keyframes g-pulse {
-      0%, 100% { opacity: 0.15; }
-      50% { opacity: 0.32; }
-    }
-  </style>
+<img width="800" height="320" alt="header(2)" src="https://github.com/user-attachments/assets/d3213bc7-27e1-41c0-846b-340841d97f43" />
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
   <defs>
-    <filter id="g-blur" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="60"/>
-    </filter>
-    <filter id="g-card-shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.5"/>
-    </filter>
-    <filter id="g-mini-shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
-    </filter>
-    <radialGradient id="g-blob1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="g-blob2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="g-blob3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#000000" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#000000" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="g-vignette" cx="50%" cy="50%" r="65%">
-      <stop offset="50%" stop-color="rgb(0,0,0)" stop-opacity="0"/>
-      <stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="0.45"/>
+    <linearGradient id="ceSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#25292e"/>
+      <stop offset="0.55" stop-color="#0c1016"/>
+      <stop offset="1" stop-color="#07090c"/>
+    </linearGradient>
+    <radialGradient id="ceVig" cx="0.5" cy="0.4" r="0.75">
+      <stop offset="0.6" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
     </radialGradient>
   </defs>
-  
-  <rect width="800" height="300" fill="#000000"/>
-  <g filter="url(#g-blur)" class="g-blobs">
-    <circle class="g-blob1" cx="224.00000000000003" cy="165" r="220" fill="url(#g-blob1)"/>
-    <circle class="g-blob2" cx="576" cy="135" r="240" fill="url(#g-blob2)"/>
-    <circle class="g-blob3" cx="400" cy="315" r="200" fill="url(#g-blob3)"/>
+  <style>
+    @keyframes ceTwinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+    @keyframes ceDraw { 0%, 12% { stroke-dashoffset: var(--l, 100); } 34%, 90% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; } }
+    .ce-star-div { transform-box: fill-box; transform-origin: center; animation: ceStar 12s linear infinite; }
+    @keyframes ceStar { to { transform: rotate(360deg); } }
+    
+    .ce-eyebrow { animation: ceReveal 12s ease-out infinite; }
+    .ce-name { animation: ceReveal 12s ease-out infinite; animation-delay: 0.96s; }
+    .ce-div { animation: ceWipe 12s ease-out infinite; transform-box: fill-box; transform-origin: left center; animation-delay: 1.68s; }
+    .ce-deck { animation: ceReveal 12s ease-out infinite; }
+    .ce-deck-0 { animation-delay: 2.40s; }
+    .ce-deck-1 { animation-delay: 2.88s; }
+    .ce-meta { animation: ceReveal 12s ease-out infinite; animation-delay: 3.60s; }
+    
+    @keyframes ceReveal { 0%, 5% { opacity: 0; transform: translateY(5px); } 18%, 90% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; } }
+    @keyframes ceWipe { 0%, 8% { transform: scaleX(0); } 24%, 90% { transform: scaleX(1); } 100% { transform: scaleX(1); } }
+  </style>
+
+  <rect width="800" height="320" fill="url(#ceSky)"/>
+
+  <!-- starfield -->
+  <circle cx="287" cy="34" r="1.28" fill="#eef2fb" opacity="0.81" style="animation: ceTwinkle 2.25s ease-in-out 0.90s infinite"/>
+  <circle cx="373" cy="139" r="1.11" fill="#eef2fb" opacity="0.60" style="animation: ceTwinkle 2.77s ease-in-out 2.70s infinite"/>
+  <circle cx="82" cy="79" r="0.74" fill="#ffffff" opacity="0.77" style="animation: ceTwinkle 2.48s ease-in-out 1.99s infinite"/>
+  <circle cx="607" cy="260" r="1.57" fill="#eef2fb" opacity="0.79" style="animation: ceTwinkle 3.32s ease-in-out 0.76s infinite"/>
+  <circle cx="785" cy="209" r="1.50" fill="#eef2fb" opacity="0.72" style="animation: ceTwinkle 3.23s ease-in-out 0.45s infinite"/>
+  <circle cx="39" cy="113" r="1.47" fill="#eef2fb" opacity="0.84" style="animation: ceTwinkle 4.05s ease-in-out 0.22s infinite"/>
+  <circle cx="213" cy="202" r="0.46" fill="#eef2fb" opacity="0.82" style="animation: ceTwinkle 2.90s ease-in-out 0.46s infinite"/>
+  <circle cx="540" cy="199" r="0.63" fill="#eef2fb" opacity="0.76" style="animation: ceTwinkle 3.28s ease-in-out 0.50s infinite"/>
+  <circle cx="796" cy="78" r="0.58" fill="#eef2fb" opacity="0.84" style="animation: ceTwinkle 4.10s ease-in-out 2.92s infinite"/>
+  <circle cx="364" cy="41" r="1.16" fill="#eef2fb" opacity="0.81" style="animation: ceTwinkle 2.40s ease-in-out 0.63s infinite"/>
+  <circle cx="740" cy="157" r="1.48" fill="#eef2fb" opacity="0.39" style="animation: ceTwinkle 2.42s ease-in-out 0.65s infinite"/>
+  <circle cx="88" cy="108" r="0.92" fill="#eef2fb" opacity="0.59" style="animation: ceTwinkle 2.88s ease-in-out 1.84s infinite"/>
+  <circle cx="78" cy="207" r="1.41" fill="#eef2fb" opacity="0.79" style="animation: ceTwinkle 3.20s ease-in-out 0.75s infinite"/>
+  <circle cx="538" cy="191" r="1.58" fill="#eef2fb" opacity="0.70" style="animation: ceTwinkle 3.98s ease-in-out 0.67s infinite"/>
+  <circle cx="190" cy="264" r="1.42" fill="#eef2fb" opacity="0.52" style="animation: ceTwinkle 2.71s ease-in-out 2.19s infinite"/>
+  <circle cx="664" cy="159" r="1.02" fill="#eef2fb" opacity="0.40" style="animation: ceTwinkle 3.45s ease-in-out 0.19s infinite"/>
+  <circle cx="13" cy="11" r="1.02" fill="#eef2fb" opacity="0.81" style="animation: ceTwinkle 3.30s ease-in-out 2.73s infinite"/>
+  <circle cx="453" cy="223" r="0.76" fill="#eef2fb" opacity="0.65" style="animation: ceTwinkle 2.31s ease-in-out 1.90s infinite"/>
+  <circle cx="87" cy="134" r="0.98" fill="#eef2fb" opacity="0.71" style="animation: ceTwinkle 2.17s ease-in-out 1.17s infinite"/>
+  <circle cx="3" cy="197" r="1.62" fill="#eef2fb" opacity="0.41" style="animation: ceTwinkle 3.96s ease-in-out 0.67s infinite"/>
+  <circle cx="651" cy="45" r="1.68" fill="#eef2fb" opacity="0.50" style="animation: ceTwinkle 3.01s ease-in-out 2.23s infinite"/>
+  <circle cx="747" cy="192" r="0.68" fill="#eef2fb" opacity="0.36" style="animation: ceTwinkle 2.60s ease-in-out 1.64s infinite"/>
+  <circle cx="342" cy="194" r="1.54" fill="#eef2fb" opacity="0.76" style="animation: ceTwinkle 2.81s ease-in-out 1.05s infinite"/>
+  <circle cx="477" cy="168" r="1.31" fill="#eef2fb" opacity="0.77" style="animation: ceTwinkle 4.16s ease-in-out 0.72s infinite"/>
+  <circle cx="698" cy="120" r="1.13" fill="#eef2fb" opacity="0.64" style="animation: ceTwinkle 3.15s ease-in-out 0.08s infinite"/>
+  <circle cx="680" cy="255" r="0.53" fill="#eef2fb" opacity="0.46" style="animation: ceTwinkle 4.16s ease-in-out 2.92s infinite"/>
+  <circle cx="492" cy="56" r="1.01" fill="#eef2fb" opacity="0.38" style="animation: ceTwinkle 3.83s ease-in-out 1.82s infinite"/>
+  <circle cx="123" cy="318" r="1.28" fill="#eef2fb" opacity="0.38" style="animation: ceTwinkle 3.19s ease-in-out 0.83s infinite"/>
+  <circle cx="783" cy="90" r="1.15" fill="#eef2fb" opacity="0.61" style="animation: ceTwinkle 2.21s ease-in-out 1.39s infinite"/>
+  <circle cx="123" cy="185" r="0.65" fill="#eef2fb" opacity="0.76" style="animation: ceTwinkle 2.37s ease-in-out 1.74s infinite"/>
+  <circle cx="342" cy="70" r="0.76" fill="#ffffff" opacity="0.40" style="animation: ceTwinkle 3.19s ease-in-out 1.41s infinite"/>
+  <circle cx="24" cy="108" r="1.19" fill="#eef2fb" opacity="0.66" style="animation: ceTwinkle 2.81s ease-in-out 1.65s infinite"/>
+  <circle cx="364" cy="212" r="1.16" fill="#ffffff" opacity="0.68" style="animation: ceTwinkle 3.46s ease-in-out 2.23s infinite"/>
+  <circle cx="275" cy="250" r="0.45" fill="#ffffff" opacity="0.43" style="animation: ceTwinkle 3.43s ease-in-out 1.68s infinite"/>
+  <circle cx="367" cy="275" r="1.56" fill="#eef2fb" opacity="0.69" style="animation: ceTwinkle 3.72s ease-in-out 2.83s infinite"/>
+  <circle cx="686" cy="253" r="0.43" fill="#eef2fb" opacity="0.71" style="animation: ceTwinkle 4.02s ease-in-out 0.75s infinite"/>
+  <circle cx="334" cy="117" r="1.22" fill="#eef2fb" opacity="0.82" style="animation: ceTwinkle 2.68s ease-in-out 0.93s infinite"/>
+  <circle cx="167" cy="88" r="0.87" fill="#eef2fb" opacity="0.56" style="animation: ceTwinkle 3.73s ease-in-out 2.66s infinite"/>
+  <circle cx="435" cy="231" r="1.69" fill="#ffffff" opacity="0.71" style="animation: ceTwinkle 2.68s ease-in-out 0.35s infinite"/>
+  <circle cx="412" cy="78" r="0.53" fill="#eef2fb" opacity="0.38" style="animation: ceTwinkle 2.78s ease-in-out 2.21s infinite"/>
+  <circle cx="617" cy="291" r="1.32" fill="#eef2fb" opacity="0.76" style="animation: ceTwinkle 2.42s ease-in-out 2.15s infinite"/>
+  <circle cx="40" cy="90" r="0.64" fill="#ffffff" opacity="0.73" style="animation: ceTwinkle 4.34s ease-in-out 1.19s infinite"/>
+  <circle cx="279" cy="42" r="1.31" fill="#eef2fb" opacity="0.78" style="animation: ceTwinkle 2.61s ease-in-out 2.99s infinite"/>
+  <circle cx="413" cy="266" r="1.01" fill="#eef2fb" opacity="0.45" style="animation: ceTwinkle 4.01s ease-in-out 0.67s infinite"/>
+  <g style="animation: ceTwinkle 2.4s ease-in-out 0.0s infinite">
+    <circle cx="120" cy="70" r="2.6" fill="#eef2fb"/>
+    <path d="M 120 63 L 120 77 M 113 70 L 127 70" stroke="#eef2fb" stroke-width="0.8" opacity="0.6"/>
   </g>
-  <rect width="800" height="300" fill="url(#g-vignette)"/>
-  <g class="g-particles"><circle class="g-p p0" cx="400" cy="150" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p1" cx="768.68" cy="120.84" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p2" cx="422.89" cy="292.13" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p3" cx="623.29" cy="15.45" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p4" cx="549.49" cy="275.71" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p0" cx="581.39" cy="29.99" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p1" cx="650.43" cy="168.29" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p2" cx="466.23" cy="71.32" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p3" cx="131.64" cy="177" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p4" cx="215.85" cy="33.44" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p0" cx="388.6" cy="237.38" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p1" cx="328.48" cy="75.4" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p2" cx="71.62" cy="166.18" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p3" cx="398.07" cy="40.36" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p4" cx="326.41" cy="217.99" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p0" cx="576.73" cy="125.39" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p1" cx="770.75" cy="237.18" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p2" cx="573.68" cy="109.48" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p3" cx="657.67" cy="248.42" r="1.2" fill="#ffffff" opacity="0.2"/><circle class="g-p p4" cx="529.06" cy="145.69" r="1.2" fill="#ffffff" opacity="0.2"/></g>
-  
-  
-  <g filter="url(#g-card-shadow)">
-    <rect x="70" y="50" width="660" height="200" rx="18" ry="18" fill="rgba(255,255,255,0.04)"/>
+  <g style="animation: ceTwinkle 2.8s ease-in-out 0.5s infinite">
+    <circle cx="690" cy="90" r="3.2" fill="#eef2fb"/>
+    <path d="M 690 83 L 690 97 M 683 90 L 697 90" stroke="#eef2fb" stroke-width="0.8" opacity="0.6"/>
   </g>
-  <rect x="70.5" y="50.5" width="659" height="199" rx="18" ry="18" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-  <rect x="71.5" y="51.5" width="657" height="197" rx="17" ry="17" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <g style="animation: ceTwinkle 3.2s ease-in-out 1.0s infinite">
+    <circle cx="560" cy="240" r="2.6" fill="#eef2fb"/>
+    <path d="M 560 233 L 560 247 M 553 240 L 567 240" stroke="#eef2fb" stroke-width="0.8" opacity="0.6"/>
+  </g>
+  <g style="animation: ceTwinkle 3.6s ease-in-out 1.5s infinite">
+    <circle cx="80" cy="230" r="3.2" fill="#eef2fb"/>
+    <path d="M 80 223 L 80 237 M 73 230 L 87 230" stroke="#eef2fb" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- constellation -->
+  <line x1="600" y1="90" x2="660" y2="140" stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-dasharray="78" stroke-dashoffset="78" style="--l:78; animation: ceDraw 12s ease-out 2.16s infinite"/>
+  <line x1="660" y1="140" x2="620" y2="200" stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-dasharray="72" stroke-dashoffset="72" style="--l:72; animation: ceDraw 12s ease-out 3.12s infinite"/>
+  <line x1="620" y1="200" x2="690" y2="230" stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-dasharray="76" stroke-dashoffset="76" style="--l:76; animation: ceDraw 12s ease-out 4.08s infinite"/>
+  <line x1="690" y1="230" x2="720" y2="170" stroke="#ffffff" stroke-width="1.2" opacity="0.85" stroke-dasharray="67" stroke-dashoffset="67" style="--l:67; animation: ceDraw 12s ease-out 5.04s infinite"/>
+  <circle cx="600" cy="90" r="2.6" fill="#ffffff" style="animation: ceTwinkle 2.0s ease-in-out 0.00s infinite"/>
+  <circle cx="660" cy="140" r="2.6" fill="#ffffff" style="animation: ceTwinkle 2.3s ease-in-out 0.25s infinite"/>
+  <circle cx="620" cy="200" r="2.6" fill="#ffffff" style="animation: ceTwinkle 2.6s ease-in-out 0.50s infinite"/>
+  <circle cx="690" cy="230" r="2.6" fill="#ffffff" style="animation: ceTwinkle 2.9s ease-in-out 0.75s infinite"/>
+  <circle cx="720" cy="170" r="2.6" fill="#ffffff" style="animation: ceTwinkle 3.2s ease-in-out 1.00s infinite"/>
+
+  <rect width="800" height="320" fill="url(#ceVig)"/>
+
+  <!-- text -->
+  <text class="ce-eyebrow" x="48" y="128" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="12" letter-spacing="4">.</text>
+  <text class="ce-name" x="48" y="168" fill="#eef2fb" font-family="Georgia, 'Times New Roman', serif" font-size="44" letter-spacing="1">Swapy</text>
+
+  <!-- gold star divider -->
+  <g class="ce-div">
+    <line x1="48" y1="186" x2="198" y2="186" stroke="#ffffff" stroke-width="1"/>
+    <path class="ce-star-div" d="M 216 180 L 218.5 185 L 224 186 L 218.5 187 L 216 192 L 213.5 187 L 208 186 L 213.5 185 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- deck -->
   
-  <text x="400" y="130.5" text-anchor="middle" fill="#f5f5f7" font-family='"Inter", system-ui, -apple-system, sans-serif' font-size="38" font-weight="600" font-style="normal">Swapy</text>
-  <text x="400" y="166.5" text-anchor="middle" fill="#a8a8b3" font-family='"Inter", system-ui, -apple-system, sans-serif' font-size="15" font-weight="500" font-style="normal">Software Engineer</text>
-  <text x="400" y="194.5" text-anchor="middle" fill="#f5f5f7" font-family='"Inter", system-ui, -apple-system, sans-serif' font-size="13" font-weight="400" font-style="italic" opacity="0.7">LLMs, iOS, infra. Learning Go eventually.</text>
-  <rect x="0.5" y="0.5" width="799" height="299" rx="14" ry="14" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- meta -->
+  
 </svg>
